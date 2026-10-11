@@ -1,0 +1,27 @@
+# startech-rs server configuration (protocol 763 / MC 1.20.1)
+# Copy to server.properties and edit.
+
+server-port=25566
+motd=startech-rs - a 1.20.1 Rust server
+max-players=20
+view-distance=8
+simulation-distance=8
+level-name=world
+gamemode=survival
+difficulty=normal
+hardcore=false
+online-mode=false
+
+# --- Managed Forge: Rust supervises a real Forge JVM (any mods work) ---
+startech-forge-enabled=false
+startech-forge-dir=.
+startech-forge-java=java
+startech-forge-jvm-args=
+startech-forge-internal-port=0
+startech-forge-internal-ip=127.0.0.1
+startech-forge-auto-restart=true
+startech-forge-max-restarts=3
+startech-forge-stop-timeout-secs=30
+
+# --- Native Forge: Rust speaks the FML handshake itself (no JVM, no mods) ---
+startech-forge-native=false
